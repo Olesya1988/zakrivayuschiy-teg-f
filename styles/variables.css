@@ -7,6 +7,7 @@
   --background: repeating-linear-gradient(to left, #d3d3d3, transparent 2px), repeating-linear-gradient(to bottom, #d3d3d3, transparent 2px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --main-text-color: #000;
+  --accent-text-color: #fff;
   --stroke-color: rgba(255, 255, 255, 0.5);
   --animation-fill-color: #FF0000;
 }

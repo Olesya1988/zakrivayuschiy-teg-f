@@ -2,6 +2,7 @@
   font-family: var(--main-font-family, Arial), sans-serif;
   background-image: var(--background, #dbd8d8);
   background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--content-font-wight, 400);
@@ -179,29 +180,20 @@
   z-index: 1;
   align-self: center;
   width: 21px;
-  transition: 0.5s ease-in-out;
+  color: var(--accent-text-color, #fff);
+  mix-blend-mode: difference;
 }
 
 /* Модальное окно */
-
-.dialog-icon {
-  inline-size: 40px;
-  block-size: 40px;
-}
 
 .button__text {
   position: relative;
   z-index: 2;
   display: inline-block;
+  color: var(--accent-text-color, #fff);
   font-family: var(--accent-font-family, fantasy), serif;
   font-size: 14px;
-  transition: color 0.6s linear;
-}
-
-.dialog-icon svg {
-  object-fit: cover;
-  inline-size: 100%;
-  block-size: 100%;
+  mix-blend-mode: difference;
 }
 
 .dialog-contaiter[open] {
@@ -218,10 +210,6 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.dialog-icon {
-  inline-size: 40px;
-}
-
 .dialog-text {
   font-family: var(--accent-font-family, fantasy), serif;
   font-size: 14px;
@@ -232,7 +220,7 @@
 
 .dialog-close {
   margin-top: 30px;
-  padding: 12.5px 0 10px;
+  padding: 7.5px 0;
   background-color: var(--accent-text-color, #fff);
   cursor: pointer;
   inline-size: 100%;
@@ -263,18 +251,6 @@
 
 .button:hover::before {
   width: 100%;
-}
-
-.button:hover .button__text {
-  color: var(--accent-text-color, #fff);
-  transition: 0.1s step-start;
-  mix-blend-mode: difference;
-}
-
-.button:hover .save-button__img {
-  color: var(--accent-text-color, #fff);
-  transition: 0.5s step-start;
-  mix-blend-mode: difference;
 }
 
 /* Анимания сердца */
